@@ -1,4 +1,6 @@
-﻿using UnityEngine;
+﻿using Unity.VisualScripting;
+using UnityEngine;
+using UnityEngine.Events;
 using UnityEngine.UI;
 
 public class DoorController : MonoBehaviour
@@ -6,11 +8,13 @@ public class DoorController : MonoBehaviour
     [SerializeField] private bool keyNeeded = false;              //Is key needed for the door
     public bool gotKey;                  //Has the player acquired key
     public GameObject keyGameObject;            //If player has Key,  assign it here
+    private UnityEvent _onZoneEntered = new();
+    [SerializeField] private GameObject _departmentDoor;
 
-    private bool playerInZone;                  //Check if the player is in the zone
+    //private bool playerInZone;                  //Check if the player is in the zone
    // private bool doorOpened;                    //Check if door is currently opened or not
 
-    private BoxCollider doorCollider;           //To enable the player to go through the door if door is opened else block him
+    //private BoxCollider doorCollider;           //To enable the player to go through the door if door is opened else block him
 
     private Animator animator;
     enum DoorState
@@ -19,7 +23,17 @@ public class DoorController : MonoBehaviour
         Opened
     }
 
-    DoorState doorState ;      //To check the current state of the door
+    //DoorState doorState ;      //To check the current state of the door
+
+    private void OnEnable()
+    {
+        _onZoneEntered.AddListener(CheckDoorOpenConditions);
+    }
+
+    private void OnDisable()
+    {
+        _onZoneEntered.RemoveListener(CheckDoorOpenConditions);
+    }
 
     /// <summary>
     /// Initial State of every variables
@@ -28,26 +42,42 @@ public class DoorController : MonoBehaviour
     {
         gotKey = false;
         //doorOpened = false;                     //Is the door currently opened
-        playerInZone = false;                   //Player not in zone
-        doorState = DoorState.Closed;           //Starting state is door closed
+        //playerInZone = false;                   //Player not in zone
+        //doorState = DoorState.Closed;           //Starting state is door closed
 
-        animator = transform.parent.gameObject.GetComponent<Animator>();
+        animator = _departmentDoor.GetComponent<Animator>();
         
-        doorCollider = transform.parent.gameObject.GetComponent<BoxCollider>();
+        //doorCollider = _departmentDoor.GetComponent<BoxCollider>();
+    }
 
-        //If Key is needed and the KeyGameObject is not assigned, stop playing and throw error
-        if (keyNeeded && keyGameObject == null)
+    private void CheckDoorOpenConditions()
+    {
+        if (keyNeeded)
         {
-            //UnityEditor.EditorApplication.isPlaying = false;
-            Debug.LogError("Assign Key GameObject");
+            // check conditions then open door
+            if (gotKey)
+            {
+                _departmentDoor.GetComponent<Collider>().enabled = false;
+                OpenDoor();
+            }
         }
+        else
+        {
+            OpenDoor();
+        }
+    }
+
+    private void OpenDoor()
+    {
+        animator.SetBool("IsTheDoorOpen", true);
+        //doorState = DoorState.Opened;
     }
 
     private void OnTriggerEnter(Collider other)
     {
        if(other.gameObject.name == "XR Origin (XR Rig)")
         {
-            playerInZone = true;
+            _onZoneEntered.Invoke();    
         }
     }
     public void SetGotKey()
@@ -55,48 +85,5 @@ public class DoorController : MonoBehaviour
         gotKey = true;
     }
 
-    private void OnTriggerExit(Collider other)
-    {
-        if (other.gameObject.name == "XR Origin (XR Rig)")
-        {
-            playerInZone = false;
-        }
-    }
-
-    private void Update()
-    {
-        //To Check if the player is in the zone
-        if (playerInZone)
-        {
-            
-
-            if (doorState == DoorState.Opened)
-            {
-                
-                doorCollider.enabled = false;
-            }
-            else 
-            {
-                
-                doorCollider.enabled = true;
-            }
-             if (doorState == DoorState.Closed)
-            {
-                if (!keyNeeded)
-                {
-                animator.SetBool("IsTheDoorOpen", true);
-                doorState = DoorState.Opened;
-                }
-            }
-
-            if (doorState == DoorState.Closed && gotKey)
-            {
-                
-                animator.SetBool("IsTheDoorOpen", true);
-                doorState = DoorState.Opened;
-            }
-        }
-
-        
-    }
+    
 }

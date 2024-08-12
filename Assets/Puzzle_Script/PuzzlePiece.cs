@@ -17,18 +17,18 @@ public class PuzzlePiece : MonoBehaviour
         socket.selectExited.AddListener(ObjectRemoved);
     }
 
-    private void ObjectSnapped(SelectEnterEventArgs arg0)
+    private void ObjectSnapped(SelectEnterEventArgs selectEnterEventArgs)
     {
-        var snappedObjectName = arg0.interactableObject;
+        var snappedObjectName = selectEnterEventArgs.interactableObject;
         if (snappedObjectName.transform.name == correctPuzzlePiece.name)
         {
             linkedPuzzleManager.CompletedPuzzleTask();
         }
 
     }
-    private void ObjectRemoved(SelectExitEventArgs arg0)
+    private void ObjectRemoved(SelectExitEventArgs selectExitEventArgs)
     {
-        var removedObjectName = arg0.interactableObject;
+        var removedObjectName = selectExitEventArgs.interactableObject;
         if (removedObjectName.transform.name == correctPuzzlePiece.name)
         {
             linkedPuzzleManager.PuzzlePeiceRemoved();
