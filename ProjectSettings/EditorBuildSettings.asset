@@ -5,9 +5,21 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/SampleScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/Scenes/UIScenes/MainMenuScene.unity
+    guid: d55efab7714aae845a596ae83ba8b101
+  - enabled: 1
+    path: Assets/Scenes/Main VR Scene.unity
+    guid: 8ae9fa783564f724daf51841751a271f
+  - enabled: 1
+    path: Assets/Scenes/UIScenes/GameOverScene.unity
+    guid: 27759542653c3894b8477811d95faa7a
+  - enabled: 1
+    path: Assets/Scenes/UIScenes/AboutTheGame.unity
+    guid: d0c432b47d915c648806dd10808f7765
   m_configObjects:
     com.unity.xr.management.loader_settings: {fileID: 11400000, guid: ea2d5bbbad3c26248a704d70e7deac08,
       type: 2}
