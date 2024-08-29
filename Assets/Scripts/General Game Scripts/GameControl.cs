@@ -6,12 +6,13 @@ using UnityEngine.Events;
 
 public class GameControl : MonoBehaviour
 {
-    // Enum to represent the different possible game states
-    public enum GameState
+    
+
+// Enum to represent the different possible game states
+public enum GameState
     {
         Play,  // The game is currently being played
         Win,   // The player has won the game
-        Lose   // The player has lost the game (not used in this script but could be extended)
     }
 
     [Header("Winning Events")]
@@ -26,8 +27,10 @@ public class GameControl : MonoBehaviour
     {
         // Initialize the game state to Play when the game starts
         tempState = GameState.Play;
+        
     }
 
+ 
     // Update is called once per frame
     void Update()
     {
@@ -36,7 +39,7 @@ public class GameControl : MonoBehaviour
     }
 
     // Method to set the game state to Win
-    public void win()
+    public void Win()
     {
         // Change the game state to Win
         tempState = GameState.Win;
@@ -58,4 +61,5 @@ public class GameControl : MonoBehaviour
         // Return the current game state
         return tempState;
     }
+    
 }

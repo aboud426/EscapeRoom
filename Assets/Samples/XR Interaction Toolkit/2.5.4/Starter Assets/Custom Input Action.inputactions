@@ -1,0 +1,34 @@
+{
+    "name": "Custom Input Action",
+    "maps": [
+        {
+            "name": "Paus Menu",
+            "id": "f2a58339-e0a1-4ef0-a67d-1d536bdc4ea3",
+            "actions": [
+                {
+                    "name": "MenuPressed",
+                    "type": "Button",
+                    "id": "8535c009-c734-4cbc-bef7-2d27abd4585f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "f11907a3-1095-4e3a-a7d0-500c8e7afab1",
+                    "path": "<OculusTouchController>/secondaryButton",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuPressed",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
+        }
+    ],
+    "controlSchemes": []
+}
