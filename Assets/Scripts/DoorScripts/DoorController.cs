@@ -12,7 +12,7 @@ public class DoorController : MonoBehaviour
     public bool gotKey;
 
     // Reference to the GameObject representing the key
-    public GameObject keyGameObject;
+    [SerializeField] private GameObject key;
 
     // UnityEvent that is triggered when the zone is entered
     private UnityEvent _onZoneEntered = new();
@@ -20,8 +20,8 @@ public class DoorController : MonoBehaviour
     // Reference to the GameObject representing the department door
     [SerializeField] private GameObject _departmentDoor;
 
-    [Header("Completion Events")]
     // UnityEvent that is triggered when the door is opened
+    [Header("Completion Events")]
     public UnityEvent onDoorOpened;
 
     // Reference to the Animator component controlling the door animations

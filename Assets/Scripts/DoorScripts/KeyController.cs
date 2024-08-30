@@ -8,7 +8,7 @@ public class KeyController : MonoBehaviour
     // Reference to the BoxCollider component attached to the GameObject
     private BoxCollider keyCollider;
 
-    // Reference to the Rigidbody component attached to the GameObject (not used in this code but might be intended for future use)
+    // Reference to the Rigidbody component attached to the GameObject 
     private Rigidbody keyRB;
 
     // Reference to the Text UI element to display messages to the player

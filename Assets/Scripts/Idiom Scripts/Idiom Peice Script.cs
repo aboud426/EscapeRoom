@@ -6,7 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class IdiomPeiceScript : MonoBehaviour
 {
     // Reference to the IdoiomPuzzleManager that this piece is linked to
-    [SerializeField] private IdoiomPuzzleManager linkedPuzzleManager;
+    [SerializeField] private IdiomPuzzleManager linkedPuzzleManager;
 
     // The transform of the correct puzzle piece, used to check if the correct piece is snapped in place
     [SerializeField] private Transform correctPuzzlePiece;

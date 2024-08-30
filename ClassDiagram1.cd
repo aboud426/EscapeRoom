@@ -1,0 +1,207 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="DoorController">
+    <Position X="32.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAQAoAAACAQAAAAAAAABAgAAAAIEIgIQAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\DoorScripts\DoorController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AudioFindInteractableAffordance">
+    <Position X="21.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\Scripts\Audio Scripts\AudioFindInteractableAffordance.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KeyController">
+    <Position X="25.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAwAAAAAAAAAAAAAAQAAABAABAAA=</HashCode>
+      <FileName>Assets\Scripts\DoorScripts\KeyController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PlayerMovement">
+    <Position X="27.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEQgBAAAAiAAAAAIIABAABACAAAACAAAACAAAACAAQA=</HashCode>
+      <FileName>Assets\Scripts\DoorScripts\PlayerMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="WinningCanvasController">
+    <Position X="21.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAQAA=</HashCode>
+      <FileName>Assets\Scripts\DoorScripts\WinningCanvasController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AfterOpenDoorKeyController">
+    <Position X="35" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAEAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\General Game Scripts\AfterOpenDoorKeyController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="AnimateHandController">
+    <Position X="30" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACRAAAAAACAAAIQAQAAAAAAAAAAAAAAAAAAAAAAAiAA=</HashCode>
+      <FileName>Assets\Scripts\General Game Scripts\AnimateHandController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="FireworkController">
+    <Position X="19.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAQAAAAAAAAAAkAAAAAAAAIAAAAAAAASAA=</HashCode>
+      <FileName>Assets\Scripts\General Game Scripts\FireworkController.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="GameControl">
+    <Position X="24" Y="7.5" Width="1.5" />
+    <Compartments>
+      <Compartment Name="Nested Types" Collapsed="false" />
+    </Compartments>
+    <NestedTypes>
+      <Enum Name="GameControl.GameState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\Scripts\General Game Scripts\GameControl.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAEAAAAIAAAAAAAAAAAAMAAAAACA=</HashCode>
+      <FileName>Assets\Scripts\General Game Scripts\GameControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PauseTheGame">
+    <Position X="23.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAABAACAAAAAAEAAAAAAAAAAAAAAAAAAAQAgAAAA=</HashCode>
+      <FileName>Assets\Scripts\General Game Scripts\PauseTheGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="QuitScript">
+    <Position X="26" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAACQAAAAAAAAAAIAAAAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\General Game Scripts\Quit Script.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IdiomPeiceScript">
+    <Position X="28.25" Y="11.5" Width="1.5" />
+    <AssociationLine Name="linkedPuzzleManager" Type="IdoiomPuzzleManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="29.188" Y="13.694" />
+        <Point X="29.188" Y="16.127" />
+        <Point X="38.125" Y="16.127" />
+        <Point X="38.125" Y="13.954" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAEAAAAGAAAAAAAAAAAAAAAEAAAAACEA=</HashCode>
+      <FileName>Assets\Scripts\Idiom Scripts\Idiom Peice Script.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="linkedPuzzleManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="IdiomChestScript">
+    <Position X="30.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BABAAAAAACAAAAAIAAAAAAgAAAAAAAAIAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\Idiom Scripts\IdiomChestScript.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="IdoiomPuzzleManager">
+    <Position X="37.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAIAgAAAAAAAAAABAAAAACgAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Idiom Scripts\Idoiom Puzzle Manager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="BoxAnimation">
+    <Position X="35.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BABAAAAAACAAAAAIAAAAAAgAAAAAAAAIAAAAAAAACAA=</HashCode>
+      <FileName>Assets\Scripts\Puzzle_Script\BoxAnimation.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="KeyOut">
+    <Position X="28.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAIAAAAACAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Puzzle_Script\KeyOut.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PuzzleManager">
+    <Position X="26.25" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAgAAAAAAAAAAAAAgAAAAQAAAAAEAAAAACgAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\Puzzle_Script\Puzzle Manager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PuzzlePiece">
+    <Position X="33" Y="7.5" Width="1.5" />
+    <AssociationLine Name="linkedPuzzleManager" Type="PuzzleManager" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="34" Y="9.694" />
+        <Point X="34" Y="10.329" />
+        <Point X="32.833" Y="10.329" Type="JumpStart" />
+        <Point X="32.667" Y="10.329" Type="JumpEnd" />
+        <Point X="30.583" Y="10.329" Type="JumpStart" />
+        <Point X="30.417" Y="10.329" Type="JumpEnd" />
+        <Point X="28.333" Y="10.329" Type="JumpStart" />
+        <Point X="28.167" Y="10.329" Type="JumpEnd" />
+        <Point X="27.188" Y="10.329" />
+        <Point X="27.188" Y="9.954" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAEAAAAAAAAEAAAAGAAAAAAAAAAAAAAAEAAAAACEA=</HashCode>
+      <FileName>Assets\Scripts\Puzzle_Script\PuzzlePiece.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="linkedPuzzleManager" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="AboutTheGame">
+    <Position X="30.5" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScenesScripts\AboutTheGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="MainMenu">
+    <Position X="37.5" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScenesScripts\MainMenu.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Play">
+    <Position X="21" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Scripts\ScenesScripts\Play.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestartGame">
+    <Position X="23.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABAA=</HashCode>
+      <FileName>Assets\Scripts\ScenesScripts\RestartGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CountdownTimer">
+    <Position X="19.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAgAAACAEAAAAAAAAAIEAAAAgEAAAAAAICAAQIAA=</HashCode>
+      <FileName>Assets\Scripts\Time Scripts\CountdownTimer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.MonoBehaviour" Collapsed="true">
+    <Position X="25.5" Y="1.25" Width="1.5" />
+    <TypeIdentifier />
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

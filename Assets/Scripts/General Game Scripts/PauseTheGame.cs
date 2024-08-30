@@ -11,10 +11,10 @@ public class PauseTheGame : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        DisplayMenu();
+        ToggleMenu();
     }
 
-    public void DisplayMenu()
+    public void ToggleMenu()
     {
         if (IsActive) 
         {
@@ -33,12 +33,12 @@ public class PauseTheGame : MonoBehaviour
     {
         if (context.performed)
         {
-            DisplayMenu();
+            ToggleMenu();
         }
     }
     public void Resume()
     {
-        DisplayMenu();
+        ToggleMenu();
     }
    
 

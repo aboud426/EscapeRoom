@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.Events;
 using UnityEngine.XR.Interaction.Toolkit;
 
-public class IdoiomPuzzleManager : MonoBehaviour
+public class IdiomPuzzleManager : MonoBehaviour
 {
     // The total number of tasks that need to be completed to solve the idiom puzzle
     [SerializeField] private int nuberOfTasksToComplete;
