@@ -1,0 +1,2 @@
+countdownTime=900.0
+flashFrequency=1.0

@@ -1,0 +1,5 @@
+Use The right controller to turn by the thumpstic.
+Use The left controller to turn by the thumpstic.
+Use the Grip buttons to catch things.
+Use the trigger button to click on the buttons menus.
+Use X or B to pause the game while playin.

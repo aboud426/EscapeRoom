@@ -1,0 +1,4 @@
+The Escape Room game is a game has some puzzles you have to solve them to open the door and escape before the time is run out.
+The Image puzzle :
+you have to put the Pieces which you have on the table in their right places to have a complete image on the container then you have to take the key and go to the door which will open automatically when you stand in front of it having the key.
+but if their is a piece is missing you have to find it and bring it to complete the image; by solving another puzzle you will get the missing piece.
